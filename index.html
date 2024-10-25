@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button id="focusOption">Focus</button>
+            <button id="shortBreakOption">Short Break</button>
+            <button id="longBreakOption">Long Break</button>
+        </div>
+        <div id="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="control-buttons">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+            <button id="settings">Settings</button>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Settings</h2>
+            <label for="focusTime">Focus Time (minutes):</label>
+            <input type="number" id="focusTime" value="25" min="1">
+            <label for="shortBreak">Short Break (minutes):</label>
+            <input type="number" id="shortBreak" value="5" min="1">
+            <label for="longBreak">Long Break (minutes):</label>
+            <input type="number" id="longBreak" value="15" min="1">
+            <label for="fontColor">Font Color:</label>
+            <input type="color" id="fontColor" value="#000000">
+            <label for="backgroundColor">Background Color:</label>
+            <input type="color" id="backgroundColor" value="#ffffff">
+            <button id="saveSettings">Save Settings</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
