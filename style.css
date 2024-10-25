@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+    border: 10px solid black; /* Default border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    background-color: white; /* Default background color */
+    color: black; /* Default font color */
+}
+
+.container {
+    text-align: center; /* Center content */
+}
+
+.button-container {
+    margin-bottom: 20px; /* Spacing below the buttons */
+}
+
+#timer {
+    font-size: 48px; /* Adjust font size for timer */
+}
+
+.control-buttons {
+    margin-top: 20px; /* Spacing above control buttons */
+}
+
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* On top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with transparency */
+}
+
+.modal-content {
+    background-color: #fefefe; /* White background for modal */
+    margin: 15% auto; /* Center modal */
+    padding: 20px; /* Padding for content */
+    border: 1px solid #888; /* Border for modal */
+    width: 80%; /* Width of modal */
+}
+
+.close {
+    color: #aaa; /* Close button color */
+    float: right; /* Align right */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Ensuring the settings modal retains default styles */
+.modal-content label {
+    color: black; /* Ensure labels in settings stay black */
+}
